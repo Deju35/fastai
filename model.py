@@ -46,3 +46,6 @@ dls = DataBlock(
 ).dataloaders(path, bs=32)
 
 dls.show_batch(max_n=10)
+
+learn = vision_learner(dls, resnet18, metrics=error_rate)
+learn.fine_tune(4) // run for 4 epochs 
