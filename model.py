@@ -54,3 +54,7 @@ learn.fine_tune(4) // run for 4 epochs
 is_cat,_,probs = learn.predict(PILImage.create('snake.jpg'))
 print(f"This is a: {is_cat}.")
 print(f"Probability it's a cat: {probs[0]:.4f}")
+
+// Output
+This is a: snake.
+Probability it's a bird: 0.0003
